@@ -46,7 +46,7 @@ jobs:
       # an executable stack, which newer glibc refuses to load unless allowed.
       GLIBC_TUNABLES: glibc.rtld.execstack=2
     strategy:
-      fail-fast: false
+      fail-fast: true
       matrix:
         version:
           - "1.6"
